@@ -31,4 +31,4 @@ $ yarn start
 ```
 
 Em seguida abra no navegador o endereço `http://localhost:3000`
-Obs: O Backend precisa estar rodando.
+Obs: O [Backend](https://github.com/eliriamirna/up-restaurante-backend) precisa estar rodando.
