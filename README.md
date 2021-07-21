@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Frontend - UP Restaurante
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## O que é este projeto?
 
-## Available Scripts
+Este projeto é a criação de um ambiente intuitivo listando os produtos mais vendidos e possibilitando a fácil inserção desses no checkout para um restaurante a fim de subtituir o processo atual realizado por comanda mais rápido e fácil para seus clientes.
 
-In the project directory, you can run:
+## Resumo
 
-### `yarn start`
+Para atender o objetivo do projeto foram criadas 3 rotas com react-router-dom: uma voltada para a interface do cliente para fazer o seu pedido ao restaurante, uma com o status de pedido enviado para a cozinha e a última com todos os pedidos realizados para a cozinha inicar o preparo. As três páginas foram construídas em React utilizando o comando create-react-app.
+As páginas forma estilizadas com Styled Components para componentizar o CSS, foi utilizado o axios para realizar request ao backend de forma assíncrona.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Organização das pastas do projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- assets: Para arquivos estáticos.
+- components: Armazena componentes padronizados reutilizados em toda a aplicação.
+- pages: Páginas principais da aplicação. Uma para cada rota.
+- service: Interação com aplicação externa neste caso o Backend.
+- styles: Armazena a estilização global da aplicação.
 
-### `yarn test`
+## O que ele faz?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+É a inteface do usuário para realizar pedidos do cardápio de um restaurante e para a cozinha receber todos os pedidos que serão preparados por ela.
 
-### `yarn build`
+## Como executar?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Abra um terminal na pasta projeto e execute:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ yarn install
+$ yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Em seguida abra no navegador o endereço `http://localhost:3000`
+Obs: O Backend precisa estar rodando.

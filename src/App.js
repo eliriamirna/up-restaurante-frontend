@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from "./styles/global";
+import KitchenOrders from "./pages/KitchenOrders";
+import CustomerPage from "./pages/CustomerPage";
+import OrderSuccess from "./pages/OrderSuccess";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/order">
+            <KitchenOrders />
+          </Route>
+          <Route path="/success">
+            <OrderSuccess />
+          </Route>
+          <Route path="/">
+            <CustomerPage />
+          </Route>
+        </Switch>
+      </Router>
+
+      <GlobalStyle />
+    </>
   );
-}
+};
 
 export default App;
